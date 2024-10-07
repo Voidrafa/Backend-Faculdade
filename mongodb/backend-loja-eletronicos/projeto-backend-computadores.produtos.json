@@ -1,0 +1,299 @@
+[
+  {
+  "_id": {
+    "$oid": "66fb1c643b293fbf16e45fa3"
+  },
+  "nome": "Computador1",
+  "categoria": "computadores",
+  "tipo": "computador",
+  "valor": 3769.99
+},
+{
+  "_id": {
+    "$oid": "66fb1c643b293fbf16e45fa4"
+  },
+  "nome": "Computador2",
+  "categoria": "computadores",
+  "tipo": "computador",
+  "valor": 5459.99
+},
+{
+  "_id": {
+    "$oid": "66fb1c643b293fbf16e45fa5"
+  },
+  "nome": "Computador3",
+  "categoria": "computadores",
+  "tipo": "computador",
+  "valor": 11999.99
+},
+{
+  "_id": {
+    "$oid": "66fb1c643b293fbf16e45fa6"
+  },
+  "nome": "Computador4",
+  "categoria": "computadores",
+  "tipo": "computador",
+  "valor": 1999.99
+},
+{
+  "_id": {
+    "$oid": "66fb1c643b293fbf16e45fa7"
+  },
+  "nome": "Computador5",
+  "categoria": "computadores",
+  "tipo": "computador",
+  "valor": 2299.99
+},
+{
+  "_id": {
+    "$oid": "66fb1c643b293fbf16e45fa8"
+  },
+  "nome": "Computador6",
+  "categoria": "computadores",
+  "tipo": "computador",
+  "valor": 19999.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0943"
+  },
+  "nome": "Celular1",
+  "categoria": "celulares",
+  "tipo": "celular",
+  "valor": 3769.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0944"
+  },
+  "nome": "Celular2",
+  "categoria": "celulares",
+  "tipo": "celular",
+  "valor": 1769.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0945"
+  },
+  "nome": "Celular3",
+  "categoria": "celulares",
+  "tipo": "celular",
+  "valor": 1569.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0946"
+  },
+  "nome": "Celular4",
+  "categoria": "celulares",
+  "tipo": "celular",
+  "valor": 2700.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0947"
+  },
+  "nome": "Celular5",
+  "categoria": "celulares",
+  "tipo": "celular",
+  "valor": 5999.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0948"
+  },
+  "nome": "Celular6",
+  "categoria": "celulares",
+  "tipo": "celular",
+  "valor": 999.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0949"
+  },
+  "nome": "Celular7",
+  "categoria": "celulares",
+  "tipo": "celular",
+  "valor": 1999.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc094a"
+  },
+  "nome": "Smartwatch1",
+  "categoria": "smartwatches",
+  "tipo": "smartwatch",
+  "valor": 339.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc094b"
+  },
+  "nome": "Smartwatch2",
+  "categoria": "smartwatches",
+  "tipo": "smartwatch",
+  "valor": 1199.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc094c"
+  },
+  "nome": "Smartwatch3",
+  "categoria": "smartwatches",
+  "tipo": "smartwatch",
+  "valor": 1999.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc094d"
+  },
+  "nome": "Smartwatch4",
+  "categoria": "smartwatches",
+  "tipo": "smartwatch",
+  "valor": 799.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc094e"
+  },
+  "nome": "Smartwatch5",
+  "categoria": "smartwatches",
+  "tipo": "smartwatch",
+  "valor": 599.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc094f"
+  },
+  "nome": "Smartwatch6",
+  "categoria": "smartwatches",
+  "tipo": "smartwatch",
+  "valor": 999.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0950"
+  },
+  "nome": "Periférico1",
+  "categoria": "perifericos",
+  "tipo": "periferico",
+  "valor": 529.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0951"
+  },
+  "nome": "Periférico2",
+  "categoria": "perifericos",
+  "tipo": "periferico",
+  "valor": 459.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0952"
+  },
+  "nome": "Periférico3",
+  "categoria": "perifericos",
+  "tipo": "periferico",
+  "valor": 799.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0953"
+  },
+  "nome": "Periférico4",
+  "categoria": "perifericos",
+  "tipo": "periferico",
+  "valor": 399.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0954"
+  },
+  "nome": "Periférico5",
+  "categoria": "perifericos",
+  "tipo": "periferico",
+  "valor": 99.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0955"
+  },
+  "nome": "Periférico6",
+  "categoria": "perifericos",
+  "tipo": "periferico",
+  "valor": 199.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0956"
+  },
+  "nome": "Periférico7",
+  "categoria": "perifericos",
+  "tipo": "periferico",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0957"
+  },
+  "nome": "Hardware1",
+  "categoria": "hardwares",
+  "tipo": "hardware",
+  "valor": 599.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0958"
+  },
+  "nome": "Hardware2",
+  "categoria": "hardwares",
+  "tipo": "hardware",
+  "valor": 2999.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc0959"
+  },
+  "nome": "Hardware3",
+  "categoria": "hardwares",
+  "tipo": "hardware",
+  "valor": 1999.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc095a"
+  },
+  "nome": "Hardware4",
+  "categoria": "hardwares",
+  "tipo": "hardware",
+  "valor": 259.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc095b"
+  },
+  "nome": "Hardware5",
+  "categoria": "hardwares",
+  "tipo": "hardware",
+  "valor": 429.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc095c"
+  },
+  "nome": "Hardware6",
+  "categoria": "hardwares",
+  "tipo": "hardware",
+  "valor": 199.99
+},
+{
+  "_id": {
+    "$oid": "670455b356bf390c23fc095d"
+  },
+  "nome": "Hardware7",
+  "categoria": "hardwares",
+  "tipo": "hardware",
+  "valor": 699.99
+}
+]
