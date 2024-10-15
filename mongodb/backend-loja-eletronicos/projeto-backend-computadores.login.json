@@ -1,11 +1,13 @@
-[
-{
+[{
   "_id": {
     "$oid": "6704568656bf390c23fc0961"
   },
   "usuario": "Usuario1",
   "email": "teste123@gmail.com",
-  "senha": "teste123"
+  "senha": "teste123",
+  "carrinhoID": {
+    "$oid": "6706f25b00281fd5d244bc97"
+  }
 },
 {
   "_id": {
@@ -13,7 +15,10 @@
   },
   "usuario": "Usuario2",
   "email": "teste123@gmail.com",
-  "senha": "teste123"
+  "senha": "teste123",
+  "carrinhoID": {
+    "$oid": "6706f25b00281fd5d244bc98"
+  }
 },
 {
   "_id": {
@@ -21,7 +26,10 @@
   },
   "usuario": "Usuario3",
   "email": "teste123@gmail.com",
-  "senha": "teste123"
+  "senha": "teste123",
+  "carrinhoID": {
+    "$oid": "6706f25b00281fd5d244bc99"
+  }
 },
 {
   "_id": {
@@ -29,7 +37,10 @@
   },
   "usuario": "Usuario4",
   "email": "teste123@gmail.com",
-  "senha": "teste123"
+  "senha": "teste123",
+  "carrinhoID": {
+    "$oid": "6706f25b00281fd5d244bc9a"
+  }
 },
 {
   "_id": {
@@ -37,7 +48,10 @@
   },
   "usuario": "Usuario5",
   "email": "teste123@gmail.com",
-  "senha": "teste123"
+  "senha": "teste123",
+  "carrinhoID": {
+    "$oid": "6706f25b00281fd5d244bc9b"
+  }
 },
 {
   "_id": {
@@ -45,6 +59,8 @@
   },
   "usuario": "Usuario6",
   "email": "teste123@gmail.com",
-  "senha": "teste123"
-}
-]
+  "senha": "teste123",
+  "carrinhoID": {
+    "$oid": "6706f25b00281fd5d244bc9c"
+  }
+}]

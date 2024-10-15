@@ -1,5 +1,4 @@
-[
-  {
+[{
   "_id": {
     "$oid": "66fb1c643b293fbf16e45fa3"
   },
@@ -295,5 +294,202 @@
   "categoria": "hardwares",
   "tipo": "hardware",
   "valor": 699.99
-}
-]
+},
+{
+  "_id": {
+    "$oid": "6706f11800281fd5d244bc74"
+  },
+  "nome": "Jogo1",
+  "categoria": "jogos",
+  "tipo": "jogo",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f11800281fd5d244bc75"
+  },
+  "nome": "Jogo2",
+  "categoria": "jogos",
+  "tipo": "jogo",
+  "valor": 149.99
+},
+{
+  "_id": {
+    "$oid": "6706f11800281fd5d244bc76"
+  },
+  "nome": "Jogo3",
+  "categoria": "jogos",
+  "tipo": "jogo",
+  "valor": 99.99
+},
+{
+  "_id": {
+    "$oid": "6706f11800281fd5d244bc77"
+  },
+  "nome": "Jogo4",
+  "categoria": "jogos",
+  "tipo": "jogo",
+  "valor": 229.99
+},
+{
+  "_id": {
+    "$oid": "6706f11800281fd5d244bc78"
+  },
+  "nome": "Jogo5",
+  "categoria": "jogos",
+  "tipo": "jogo",
+  "valor": 149.99
+},
+{
+  "_id": {
+    "$oid": "6706f11800281fd5d244bc79"
+  },
+  "nome": "Jogo6",
+  "categoria": "jogos",
+  "tipo": "jogo",
+  "valor": 49.99
+},
+{
+  "_id": {
+    "$oid": "6706f11800281fd5d244bc7a"
+  },
+  "nome": "Jogo7",
+  "categoria": "jogos",
+  "tipo": "jogo",
+  "valor": 99.99
+},
+{
+  "_id": {
+    "$oid": "6706f11800281fd5d244bc7b"
+  },
+  "nome": "Jogo8",
+  "categoria": "jogos",
+  "tipo": "jogo",
+  "valor": 199.99
+},
+{
+  "_id": {
+    "$oid": "6706f18200281fd5d244bc7d"
+  },
+  "nome": "Acessório1",
+  "categoria": "acessorio",
+  "tipo": "acessori1",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f18200281fd5d244bc7e"
+  },
+  "nome": "Acessório2",
+  "categoria": "acessorio",
+  "tipo": "acessorio",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f18200281fd5d244bc7f"
+  },
+  "nome": "Acessório3",
+  "categoria": "acessorio",
+  "tipo": "acessorio",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f18200281fd5d244bc80"
+  },
+  "nome": "Acessório4",
+  "categoria": "acessorio",
+  "tipo": "acessorio",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f18200281fd5d244bc81"
+  },
+  "nome": "Acessório5",
+  "categoria": "acessorio",
+  "tipo": "acessorio",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f18200281fd5d244bc82"
+  },
+  "nome": "Acessório6",
+  "categoria": "acessorio",
+  "tipo": "acessorio",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f18200281fd5d244bc83"
+  },
+  "nome": "Acessório7",
+  "categoria": "acessorio",
+  "tipo": "acessorio",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f1ee00281fd5d244bc85"
+  },
+  "nome": "Eletrônico1",
+  "categoria": "eletronico",
+  "tipo": "eletronico",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f1ee00281fd5d244bc86"
+  },
+  "nome": "Eletrônico2",
+  "categoria": "eletronico",
+  "tipo": "eletronico",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f1ee00281fd5d244bc87"
+  },
+  "nome": "Eletrônico3",
+  "categoria": "eletronico",
+  "tipo": "eletronico",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f1ee00281fd5d244bc88"
+  },
+  "nome": "Eletrônico4",
+  "categoria": "eletronico",
+  "tipo": "eletronico",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f1ee00281fd5d244bc89"
+  },
+  "nome": "Eletrônico5",
+  "categoria": "eletronico",
+  "tipo": "eletronico",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f1ee00281fd5d244bc8a"
+  },
+  "nome": "Eletrônico6",
+  "categoria": "eletronico",
+  "tipo": "eletronico",
+  "valor": 299.99
+},
+{
+  "_id": {
+    "$oid": "6706f1ee00281fd5d244bc8b"
+  },
+  "nome": "Eletrônico7",
+  "categoria": "eletronico",
+  "tipo": "eletronico",
+  "valor": 299.99
+}]
