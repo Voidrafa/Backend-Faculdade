@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "6706f25b00281fd5d244bc97"
+  },
+  "carrinho": "Carrinho1",
+  "produtos": [
+    {"produtoID": {"$oid": "66fb16546783d8709676ad8b"}},
+    {"produtoID": {"$oid": "66fb16546783d8709676ad8d"}},
+    {"produtoID": {"$oid": "66fb16546783d8709676ad8f"}},
+    {"produtoID": {"$oid": "670e4c057145bc6df7d6c1aa"}}
+  ]
+},
+{
+  "_id": {
+    "$oid": "6706f25b00281fd5d244bc98"
+  },
+  "carrinho": "Carrinho2",
+  "produtos": [
+    {"produtoID": {"$oid": "670e4c057145bc6df7d6c1ac"}},
+    {"produtoID": {"$oid": "670e4c057145bc6df7d6c1ab"}},
+    {"produtoID": {"$oid": "66fb16546783d8709676ad90"}},
+    {"produtoID": {"$oid": "66fb16546783d8709676ad8e"}}
+  ]
+},
+{
+  "_id": {
+    "$oid": "6706f25b00281fd5d244bc99"
+  },
+  "carrinho": "Carrinho3",
+  "produtos": [
+    {"produtoID": {"$oid": "670e4c057145bc6df7d6c1b2"}},
+    {"produtoID": {"$oid": "670e4c057145bc6df7d6c1b1"}},
+    {"produtoID": {"$oid": "670e4c057145bc6df7d6c1b4"}},
+    {"produtoID": {"$oid": "670e4c057145bc6df7d6c1b8"}}
+  ]
+},
+{
+  "_id": {
+    "$oid": "6706f25b00281fd5d244bc9a"
+  },
+  "carrinho": "Carrinho4",
+  "produtos": [
+    {"produtoID": {"$oid": "66fb1c643b293fbf16e45fa3"}},
+    {"produtoID": {"$oid": "670455b356bf390c23fc0946"}},
+    {"produtoID": {"$oid": "670455b356bf390c23fc094d"}},
+    {"produtoID": {"$oid": "670455b356bf390c23fc0951"}}
+  ]
+},
+{
+  "_id": {
+    "$oid": "6706f25b00281fd5d244bc9b"
+  },
+  "carrinho": "Carrinho5",
+  "produtos": [
+    {"produtoID": {"$oid": "670e4c057145bc6df7d6c1bc"}},
+    {"produtoID": {"$oid": "670e4c057145bc6df7d6c1bd"}},
+    {"produtoID": {"$oid": "66fb16546783d8709676ad8f"}},
+    {"produtoID": {"$oid": "66fb16546783d8709676ad90"}}
+  ]
+},
+{
+  "_id": {
+    "$oid": "6706f25b00281fd5d244bc9c"
+  },
+  "carrinho": "Carrinho6",
+  "produtos": [
+    {"produtoID": {"$oid": "670e4c057145bc6df7d6c1b9"}},
+    {"produtoID": {"$oid": "670e4c057145bc6df7d6c1bb"}},
+    {"produtoID": {"$oid": "66fb16546783d8709676ad8b"}},
+    {"produtoID": {"$oid": "66fb16546783d8709676ad8c"}}
+  ]
+}]

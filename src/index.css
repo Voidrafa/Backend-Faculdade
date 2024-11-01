@@ -1,13 +1,219 @@
-body {
+/* Reset básico */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8; /* Tom claro de azul para o fundo */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #001f3f; /* Azul escuro */
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff; /* Texto branco no logo */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1e90ff; /* Azul claro para o hover */
+}
+
+/* Barra de busca */
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #1e90ff; /* Azul vibrante */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #1c75d8; /* Efeito ao passar o mouse */
+}
+
+/* Banner Principal */
+.banner {
+  background-color: #0074d9; /* Azul médio */
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  padding: 0.8rem 2rem;
+  background-color: #001f3f; /* Azul escuro */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #004080;
+}
+
+/* Seção de Produtos */
+.produtos {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+
+.produtos h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #001f3f;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.produto-item {
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.produto-item:hover {
+  transform: translateY(-10px);
+}
+
+.produto-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.produto-item h3 {
+  font-size: 1.5rem;
+  color: #001f3f;
+  margin-bottom: 0.5rem;
+}
+
+.produto-item p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.btn-secondary {
+  padding: 0.6rem 1.5rem;
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #1c75d8;
+}
+
+/* Rodapé */
+footer {
+  background-color: #001f3f;
+  color: #ffffff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-info {
+  margin-bottom: 1rem;
+}
+
+.footer-info p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-info a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+  color: #ffffff;
+}
+
+.social-media a {
+  color: #ffffff;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #1e90ff;
 }

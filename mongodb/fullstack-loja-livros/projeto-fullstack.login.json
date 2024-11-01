@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "6704568656bf390c23fc0961"
+  },
+  "usuario": "Usuario1",
+  "email": "teste123@gmail.com",
+  "senha": "teste123",
+  "carrinhoID": {
+    "$oid": "6706f25b00281fd5d244bc97"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704568656bf390c23fc0962"
+  },
+  "usuario": "Usuario2",
+  "email": "teste123@gmail.com",
+  "senha": "teste123",
+  "carrinhoID": {
+    "$oid": "6706f25b00281fd5d244bc98"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704568656bf390c23fc0963"
+  },
+  "usuario": "Usuario3",
+  "email": "teste123@gmail.com",
+  "senha": "teste123",
+  "carrinhoID": {
+    "$oid": "6706f25b00281fd5d244bc99"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704568656bf390c23fc0964"
+  },
+  "usuario": "Usuario4",
+  "email": "teste123@gmail.com",
+  "senha": "teste123",
+  "carrinhoID": {
+    "$oid": "6706f25b00281fd5d244bc9a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704568656bf390c23fc0965"
+  },
+  "usuario": "Usuario5",
+  "email": "teste123@gmail.com",
+  "senha": "teste123",
+  "carrinhoID": {
+    "$oid": "6706f25b00281fd5d244bc9b"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704568656bf390c23fc0966"
+  },
+  "usuario": "Usuario6",
+  "email": "teste123@gmail.com",
+  "senha": "teste123",
+  "carrinhoID": {
+    "$oid": "6706f25b00281fd5d244bc9c"
+  }
+}]

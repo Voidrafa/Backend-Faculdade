@@ -1,43 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja GeekHunter - Produtos Geek, Jogos, Quadrinhos e Mais">
+    <title>GeekHunter - Loja de Produtos Geek</title>
+    <link rel="stylesheet" href="../src/index.css"> <!-- Link para o CSS externo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>GeekHunter</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar produtos...">
+                <button type="button">Buscar</button>
+            </div>
+        </div>
+    </header>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- Banner Principal -->
+    <section class="banner">
+        <div class="container">
+            <h2>Bem-vindo à GeekHunter</h2>
+            <p>Os melhores produtos geek estão aqui! Explore nossa coleção de jogos, quadrinhos e muito mais.</p>
+            <button class="btn-primary">Ver Produtos</button>
+        </div>
+    </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Seção de Produtos -->
+    <section class="produtos">
+        <div class="container">
+            <h2>Nossos Produtos</h2>
+            <div class="grid-produtos">
+                <div class="produto-item">
+                    <img src="logo192.png" alt="Produto 1">
+                    <h3>Action Figure</h3>
+                    <p>R$ 119,99</p>
+                    <button class="btn-secondary">Comprar</button>
+                </div>
+                <div class="produto-item">
+                    <img src="logo192.png" alt="Produto 2">
+                    <h3>Camiseta Geek</h3>
+                    <p>R$ 59,90</p>
+                    <button class="btn-secondary">Comprar</button>
+                </div>
+                <div class="produto-item">
+                    <img src="logo192.png" alt="Produto 3">
+                    <h3>Quadrinho Edição Especial</h3>
+                    <p>R$ 39,90</p>
+                    <button class="btn-secondary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>&copy; 2024 GeekHunter. Todos os direitos reservados.</p>
+                <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+            </div>
+            <div class="social-media">
+                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

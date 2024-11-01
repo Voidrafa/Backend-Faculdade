@@ -1,0 +1,240 @@
+[{
+  "_id": {
+    "$oid": "66fb16546783d8709676ad8b"
+  },
+  "nome": "Livro01",
+  "genero": "cyberpunk",
+  "valor": 37.99
+},
+{
+  "_id": {
+    "$oid": "66fb16546783d8709676ad8c"
+  },
+  "nome": "Livro02",
+  "genero": "fantasia",
+  "valor": 32.99
+},
+{
+  "_id": {
+    "$oid": "66fb16546783d8709676ad8d"
+  },
+  "nome": "Livro03",
+  "genero": "zumbi",
+  "valor": 24.99
+},
+{
+  "_id": {
+    "$oid": "66fb16546783d8709676ad8e"
+  },
+  "nome": "Livro04",
+  "genero": "ficção científica",
+  "valor": 39.99
+},
+{
+  "_id": {
+    "$oid": "66fb16546783d8709676ad8f"
+  },
+  "nome": "Livro05",
+  "genero": "ação",
+  "valor": 19.99
+},
+{
+  "_id": {
+    "$oid": "66fb16546783d8709676ad90"
+  },
+  "nome": "Livro06",
+  "genero": "investigação policial",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1aa"
+  },
+  "nome": "Livro07",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1ab"
+  },
+  "nome": "Livro08",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1ac"
+  },
+  "nome": "Livro09",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1ad"
+  },
+  "nome": "Livro10",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1ae"
+  },
+  "nome": "Livro11",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1af"
+  },
+  "nome": "Livro12",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1b0"
+  },
+  "nome": "Livro13",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1b1"
+  },
+  "nome": "Livro14",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1b2"
+  },
+  "nome": "Livro15",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1b3"
+  },
+  "nome": "Jogo01",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1b4"
+  },
+  "nome": "Jogo02",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1b5"
+  },
+  "nome": "Jogo03",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1b6"
+  },
+  "nome": "Jogo04",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1b7"
+  },
+  "nome": "Jogo05",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1b8"
+  },
+  "nome": "Jogo06",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1b9"
+  },
+  "nome": "Jogo07",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1ba"
+  },
+  "nome": "Jogo08",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1bb"
+  },
+  "nome": "Jogo09",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1bc"
+  },
+  "nome": "Jogo10",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1bd"
+  },
+  "nome": "Jogo11",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1be"
+  },
+  "nome": "Jogo12",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1bf"
+  },
+  "nome": "Jogo13",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1c0"
+  },
+  "nome": "Jogo14",
+  "genero": "",
+  "valor": 29.99
+},
+{
+  "_id": {
+    "$oid": "670e4c057145bc6df7d6c1c1"
+  },
+  "nome": "Jogo15",
+  "genero": "",
+  "valor": 29.99
+}]
