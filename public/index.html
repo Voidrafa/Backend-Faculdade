@@ -9,6 +9,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        async function fetchProducts() {
+            const response = await fetch("http://localhost:5000/products");
+            const products = await response.json();
+            const productsDiv = document.getElementById("products");
+            productsDiv.innerHTML = products.map(p => `
+                <div class="product">
+                    <p>${p.name}</p>
+                    <p>Preço: R$ ${p.price}</p>
+                    <button onclick="addToCart(${p.id})">Adicionar ao Carrinho</button>
+                </div>
+            `).join("");
+        }
+
+        async function fetchCart() {
+            const response = await fetch("http://localhost:5000/cart");
+            const cart = await response.json();
+            const cartDiv = document.getElementById("cart");
+            cartDiv.innerHTML = cart.map(item => `
+                <div class="cart-item">
+                    <p>${item.name} - R$ ${item.price}</p>
+                    <button onclick="removeFromCart(${item.id})">Remover</button>
+                </div>
+            `).join("");
+        }
+
+        async function addToCart(id) {
+            await fetch("http://localhost:5000/cart", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ product_id: id })
+            });
+            fetchCart();
+        }
+
+        async function removeFromCart(id) {
+            await fetch("http://localhost:5000/cart", {
+                method: "DELETE",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ product_id: id })
+            });
+            fetchCart();
+        }
+
+        window.onload = () => {
+            fetchProducts();
+            fetchCart();
+        };
+    </script>
 </head>
 <body>
     <!-- Cabeçalho -->
