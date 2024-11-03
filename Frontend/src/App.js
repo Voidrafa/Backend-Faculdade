@@ -28,7 +28,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<ProductList products={products} setCart={setCart} />} />
           <Route path="/product/:id" element={<ProductDetail setCart={setCart} />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart" element={<Cart setCart={setCart} />} />
         </Routes>
         <footer className="bg-dark text-white text-center py-3">
           <p>&copy; 2024 GeekHunter. Todos os direitos reservados.</p>
