@@ -1,24 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-const Cart = ({ cart, setCart }) => {
-  const removeFromCart = async (product_id) => {
-    const response = await fetch(`http://localhost:5000/cart/${product_id}`, {
-      method: 'DELETE',
-    });
-    if (response.ok) {
-      setCart(cart.filter(item => item.product_id !== product_id));
-    }
-  };
+const Cart = () => {
+  const [cartItems, setCartItems] = useState([]);
+
+  useEffect(() => {
+    const fetchCartItems = async () => {
+      const response = await fetch('http://localhost:5000/cart');
+      const data = await response.json();
+      setCartItems(data);
+    };
+
+    fetchCartItems();
+  }, []);
 
   return (
-    <div>
-      <h3>Seu Carrinho</h3>
-      {cart.map(item => (
-        <div key={item.product_id}>
-          <p>{item.name} - {item.quantity} x {item.price} R$</p>
-          <button onClick={() => removeFromCart(item.product_id)}>Remover</button>
-        </div>
-      ))}
+    <div className="container mt-4">
+      <h2>Carrinho de Compras</h2>
+      <div className="row">
+        {cartItems.map(item => (
+          <div className="col-md-4 mb-4" key={item.product_id}>
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">{item.name}</h5>
+                <p className="card-text">Quantidade: {item.quantity}</p>
+                <p className="card-text">Preço: {item.price} <span>R$</span></p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,19 +1,7 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-const ProductList = ({ products, cart, setCart }) => {
-  const addToCart = async (product) => {
-    const response = await fetch('http://localhost:5000/cart', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ product_id: product._id }),
-    });
-    if (response.ok) {
-      fetchCartItems(); // Call the function to refresh the cart after adding an item
-    }
-  };
-
+const ProductList = ({ products, setCart }) => {
   const fetchCartItems = async () => {
     const response = await fetch('http://localhost:5000/cart');
     const data = await response.json();
@@ -31,14 +19,15 @@ const ProductList = ({ products, cart, setCart }) => {
         {products.map(product => (
           <div className="col-md-3 mb-4" key={product._id}>
             <div className="card">
-              <img src="assets../logo192.png" className="card-img-top" alt={product.name} />
+              <img src="logo192.png" className="card-img-top" alt={product.name} />
               <div className="card-body">
-                <h5 className="card-title">{product.name}</h5>
+                <h5 className="card-title">
+                  <Link to={`/product/${product._id}`} className="text-decoration-none text-dark">
+                    {product.name}
+                  </Link>
+                </h5>
                 <p className="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
                 <p className="card-text">{product.price} <span>R$</span></p>
-                <button className="btn btn-primary" onClick={() => addToCart(product)}>
-                  Adicionar ao Carrinho
-                </button>
               </div>
             </div>
           </div>
