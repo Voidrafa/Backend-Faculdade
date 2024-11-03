@@ -1,126 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Loja GeekHunter - Produtos Geek, Jogos, Quadrinhos e Mais">
-    <title>GeekHunter - Loja de Produtos Geek</title>
-    <link rel="stylesheet" href="../src/index.css"> <!-- Link para o CSS externo -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <script>
-        async function fetchProducts() {
-            const response = await fetch("http://localhost:5000/products");
-            const products = await response.json();
-            const productsDiv = document.getElementById("products");
-            productsDiv.innerHTML = products.map(p => `
-                <div class="product">
-                    <p>${p.name}</p>
-                    <p>Preço: R$ ${p.price}</p>
-                    <button onclick="addToCart(${p.id})">Adicionar ao Carrinho</button>
-                </div>
-            `).join("");
-        }
-
-        async function fetchCart() {
-            const response = await fetch("http://localhost:5000/cart");
-            const cart = await response.json();
-            const cartDiv = document.getElementById("cart");
-            cartDiv.innerHTML = cart.map(item => `
-                <div class="cart-item">
-                    <p>${item.name} - R$ ${item.price}</p>
-                    <button onclick="removeFromCart(${item.id})">Remover</button>
-                </div>
-            `).join("");
-        }
-
-        async function addToCart(id) {
-            await fetch("http://localhost:5000/cart", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ product_id: id })
-            });
-            fetchCart();
-        }
-
-        async function removeFromCart(id) {
-            await fetch("http://localhost:5000/cart", {
-                method: "DELETE",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ product_id: id })
-            });
-            fetchCart();
-        }
-
-        window.onload = () => {
-            fetchProducts();
-            fetchCart();
-        };
-    </script>
+    <meta name="theme-color" content="#000000">
+    <title>My Shop</title>
+    <link rel="stylesheet" href="%PUBLIC_URL%/styles.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>GeekHunter</h1>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="search-bar">
-                <input type="text" placeholder="Buscar produtos...">
-                <button type="button">Buscar</button>
-            </div>
-        </div>
-    </header>
-
-    <!-- Banner Principal -->
-    <section class="banner">
-        <div class="container">
-            <h2>Bem-vindo à GeekHunter</h2>
-            <p>Os melhores produtos geek estão aqui! Explore nossa coleção de jogos, quadrinhos e muito mais.</p>
-            <button class="btn-primary">Ver Produtos</button>
-        </div>
-    </section>
-
-    <!-- Seção de Produtos -->
-    <section class="produtos">
-        <div class="container">
-            <h2>Nossos Produtos</h2>
-            <div id="products" class="grid-produtos">
-                <!-- Produtos serão renderizados aqui via JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção do Carrinho -->
-    <section class="carrinho">
-        <div class="container">
-            <h2>Seu Carrinho</h2>
-            <div id="cart" class="cart-items">
-                <!-- Itens do carrinho serão renderizados aqui via JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <div class="footer-info">
-                <p>&copy; 2024 GeekHunter. Todos os direitos reservados.</p>
-                <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
-            </div>
-            <div class="social-media">
-                <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
-            </div>
-        </div>
-    </footer>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="%PUBLIC_URL%/bundle.js"></script>
 </body>
 </html>
