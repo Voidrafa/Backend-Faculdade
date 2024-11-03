@@ -14,9 +14,23 @@ products_collection = db["products"]
 cart_collection = db["cart"]
 
 # Utility function to serialize MongoDB ObjectId
-def serialize_item(item):
-    item["_id"] = str(item["_id"])
-    return item
+def serialize_item(obj):
+    """
+    Recursively convert all ObjectId fields in a document to strings.
+    Handles nested dictionaries and lists.
+    """
+    if isinstance(obj, dict):
+        # If obj is a dictionary, apply transformation to each key-value pair
+        return {key: serialize_item(value) for key, value in obj.items()}
+    elif isinstance(obj, list):
+        # If obj is a list, apply transformation to each item
+        return [serialize_item(item) for item in obj]
+    elif isinstance(obj, ObjectId):
+        # If obj is an ObjectId, convert it to a string
+        return str(obj)
+    else:
+        # For other data types, return as-is
+        return obj
 
 # -------------------- Product Routes --------------------
 
