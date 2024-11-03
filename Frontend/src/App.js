@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail';
 import Cart from './components/Cart';
+import Navbar from './components/Navbar'; // Import the Navbar
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
   return (
     <Router>
       <div className="App">
+        <Navbar /> {/* Include the Navbar here */}
         <header className="bg-primary text-white text-center py-4">
           <h1>Geek Store</h1>
         </header>
