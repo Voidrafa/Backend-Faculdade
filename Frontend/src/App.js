@@ -12,7 +12,7 @@ const App = () => {
     const loadCartItems = async () => {
         try {
             const response = await axios.get('http://localhost:5000/cart');
-            setCartItems(response.data); // Set the cart items from the API response
+            setCartItems(response.data);
         } catch (error) {
             console.error('Error fetching cart items:', error);
         }
@@ -27,17 +27,23 @@ const App = () => {
     const addToCart = async (productId, quantity) => {
         try {
             await axios.post('http://localhost:5000/cart', { product_id: productId, quantity });
-            loadCartItems(); // Reload cart items after adding a new item
+            loadCartItems();
         } catch (error) {
             console.error('Error adding item to cart:', error);
         }
     };
 
     return (
-        <div>
-            <h1>My Shop</h1>
-            <ProductList addToCart={addToCart} />
-            <Cart cartItems={cartItems} setCartItems={setCartItems} />
+        <div className="container">
+            <h1 className="my-4 text-center">My Shop</h1>
+            <div className="row">
+                <div className="col-md-8">
+                    <ProductList addToCart={addToCart} />
+                </div>
+                <div className="col-md-4">
+                    <Cart cartItems={cartItems} setCartItems={setCartItems} />
+                </div>
+            </div>
         </div>
     );
 };

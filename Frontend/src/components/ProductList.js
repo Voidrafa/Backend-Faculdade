@@ -5,7 +5,7 @@ import axios from 'axios';
 
 const ProductList = ({ addToCart }) => {
     const [products, setProducts] = useState([]);
-    const [quantities, setQuantities] = useState({}); // Track quantities for each product
+    const [quantities, setQuantities] = useState({});
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -28,25 +28,35 @@ const ProductList = ({ addToCart }) => {
     };
 
     return (
-        <div>
-            <h2>Products</h2>
-            <ul>
+        <div className="container">
+            <h2 className="my-4">Products</h2>
+            <div className="row">
                 {products.map(product => (
-                    <li key={product._id}>
-                        <h3>{product.name}</h3>
-                        <p>Price: ${product.price}</p>
-                        <input
-                            type="number"
-                            min="1"
-                            defaultValue="1"
-                            onChange={(e) => handleQuantityChange(product._id, parseInt(e.target.value))}
-                        />
-                        <button onClick={() => addToCart(product._id, quantities[product._id] || 1)}>
-                            Add to Cart
-                        </button>
-                    </li>
+                    <div key={product._id} className="col-md-4 mb-4">
+                        <div className="card h-100">
+                            <div className="card-body">
+                                <h5 className="card-title">{product.name}</h5>
+                                <p className="card-text">Price: ${product.price}</p>
+                                <div className="input-group mb-3">
+                                    <input
+                                        type="number"
+                                        min="1"
+                                        defaultValue="1"
+                                        className="form-control"
+                                        onChange={(e) => handleQuantityChange(product._id, parseInt(e.target.value))}
+                                    />
+                                    <button 
+                                        onClick={() => addToCart(product._id, quantities[product._id] || 1)}
+                                        className="btn btn-primary"
+                                    >
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };
