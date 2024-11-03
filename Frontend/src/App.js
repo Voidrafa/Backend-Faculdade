@@ -27,9 +27,6 @@ const App = () => {
     <Router>
       <div className="App">
         <Navbar /> {/* Include the Navbar here */}
-        <header className="bg-primary text-white text-center py-4">
-          <h1>Geek Store</h1>
-        </header>
         <Routes>
           <Route path="/" element={<ProductList products={products} setCart={setCart} />} />
           <Route path="/product/:id" element={<ProductDetail setCart={setCart} />} />
