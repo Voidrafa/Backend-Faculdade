@@ -1,45 +1,26 @@
-// src/components/Cart.js
-
 import React from 'react';
-import axios from 'axios';
 
-const Cart = ({ cartItems, setCartItems }) => {
-    const handleRemove = async (productId) => {
-        try {
-            await axios.delete(`http://localhost:5000/cart/${productId}`);
-            setCartItems(cartItems.filter(item => item.product_id !== productId));
-        } catch (error) {
-            console.error('Error removing item from cart:', error);
-        }
-    };
+const Cart = ({ cart, setCart }) => {
+  const removeFromCart = async (product_id) => {
+    const response = await fetch(`http://localhost:5000/cart/${product_id}`, {
+      method: 'DELETE',
+    });
+    if (response.ok) {
+      setCart(cart.filter(item => item.product_id !== product_id));
+    }
+  };
 
-    return (
-        <div className="card">
-            <div className="card-body">
-                <h2 className="card-title">Cart</h2>
-                {cartItems.length === 0 ? (
-                    <p className="text-muted">Your cart is empty.</p>
-                ) : (
-                    <ul className="list-group">
-                        {cartItems.map(item => (
-                            <li key={item.product_id} className="list-group-item d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h5 className="mb-1">{item.name}</h5>
-                                    <small>Quantity: {item.quantity}</small>
-                                </div>
-                                <button 
-                                    onClick={() => handleRemove(item.product_id)} 
-                                    className="btn btn-danger btn-sm"
-                                >
-                                    Remove
-                                </button>
-                            </li>
-                        ))}
-                    </ul>
-                )}
-            </div>
+  return (
+    <div>
+      <h3>Seu Carrinho</h3>
+      {cart.map(item => (
+        <div key={item.product_id}>
+          <p>{item.name} - {item.quantity} x {item.price} R$</p>
+          <button onClick={() => removeFromCart(item.product_id)}>Remover</button>
         </div>
-    );
+      ))}
+    </div>
+  );
 };
 
 export default Cart;
