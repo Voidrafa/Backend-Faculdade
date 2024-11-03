@@ -7,6 +7,7 @@ import ProductDetail from './components/ProductDetail';
 import Cart from './components/Cart';
 import Navbar from './components/Navbar';
 import Products from './components/Products'; // Import the Products component
+import Footer from './components/Footer'; // Import the Footer component
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
@@ -25,7 +26,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className="App">
+      <div className="App d-flex flex-column min-vh-100">
         <Navbar /> {/* Include the Navbar here */}
         <Routes>
           <Route path="/" element={<ProductList products={products} setCart={setCart} />} />
@@ -33,9 +34,7 @@ const App = () => {
           <Route path="/cart" element={<Cart setCart={setCart} />} />
           <Route path="/products" element={<Products />} /> {/* New route for Products */}
         </Routes>
-        <footer className="bg-dark text-white text-center py-3">
-          <p>&copy; 2024 GeekHunter. Todos os direitos reservados.</p>
-        </footer>
+        <Footer /> {/* Include the Footer here */}
       </div>
     </Router>
   );
