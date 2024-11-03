@@ -1,6 +1,8 @@
+// src/components/Navbar.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo192.png'; // Adjust the path according to your structure
+import logo from '../assets/logo192.png'; // Ensure this path is correct
 
 const Navbar = () => {
     return (
@@ -20,6 +22,9 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/cart">Carrito</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/products">Products</Link> {/* New link */}
                         </li>
                     </ul>
                 </div>
