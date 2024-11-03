@@ -1,5 +1,8 @@
+// src/components/ProductList.js
+
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo192.png'; // Import the logo
 
 const ProductList = ({ products, setCart }) => {
   const fetchCartItems = async () => {
@@ -19,7 +22,7 @@ const ProductList = ({ products, setCart }) => {
         {products.map(product => (
           <div className="col-md-3 mb-4" key={product._id}>
             <div className="card">
-              <img src="logo192.png" className="card-img-top" alt={product.name} />
+              <img src={logo} className="card-img-top" alt={product.name} /> {/* Use the imported logo */}
               <div className="card-body">
                 <h5 className="card-title">
                   <Link to={`/product/${product._id}`} className="text-decoration-none text-dark">
