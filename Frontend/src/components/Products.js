@@ -31,8 +31,20 @@ const Products = () => {
         });
         if (response.ok) {
             const product = await response.json();
-            setProducts([...products, { ...newProduct, product_id: product.product_id }]);
+            setProducts([...products, { ...newProduct, _id: product.product_id }]);
             setNewProduct({ name: '', price: '', description: '' }); // Clear the form
+        }
+    };
+
+    const handleDelete = async (productId) => {
+        const response = await fetch(`http://localhost:5000/products/${productId}`, {
+            method: 'DELETE',
+        });
+        if (response.ok) {
+            // Remove the product from the local state
+            setProducts(products.filter(product => product._id !== productId));
+        } else {
+            console.error('Failed to delete product');
         }
     };
 
@@ -58,9 +70,9 @@ const Products = () => {
             <h3 className="mt-4">Existing Products</h3>
             <ul className="list-group">
                 {products.map(product => (
-                    <li key={product._id} className="list-group-item">
+                    <li key={product._id} className="list-group-item d-flex justify-content-between align-items-center">
                         <Link to={`/product/${product._id}`}>{product.name}</Link> - ${product.price}
-                        {/* You can add buttons for edit and delete here */}
+                        <button className="btn btn-danger btn-sm" onClick={() => handleDelete(product._id)}>Delete</button>
                     </li>
                 ))}
             </ul>
